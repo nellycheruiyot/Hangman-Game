@@ -50,5 +50,4 @@ public class Hangman {
       answer = tempStr;
     }
   }
-
 }

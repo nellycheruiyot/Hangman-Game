@@ -26,8 +26,8 @@ public class App {
     if (word.equals(answer)) {
       System.out.println("Congratulations! You Won!");
     }
-
   }
+  
   public static void printHangman(int count, String word) {
     if (count == 1) {
 			System.out.println("Wrong guess, try again");

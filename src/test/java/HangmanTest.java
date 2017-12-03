@@ -37,4 +37,11 @@ public class HangmanTest {
     testHangman.playGame("z");
     assertEquals(true, testHangman.getHang());
   }
+
+  @Test
+  public void playGame_updatesAnswerIfLetterExistsInWord_String() {
+    Hangman testHangman = new Hangman();
+    testHangman.playGame("o");
+    assertEquals(true, testHangman.getAnswer() instanceof String);
+  }
 }

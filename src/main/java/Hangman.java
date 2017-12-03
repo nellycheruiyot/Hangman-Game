@@ -26,6 +26,10 @@ public class Hangman {
     return hang;
   }
 
+  public int getWrongLetterCount() {
+    return wrongLetterCount;
+  }
+
   public void playGame(String letter) {
     if (word.indexOf(letter.charAt(0)) == -1) {
       hang = true;

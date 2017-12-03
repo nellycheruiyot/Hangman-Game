@@ -36,6 +36,7 @@ No known bugs
 ## Technologies Used
   * Java
   * Gradle
+  * JUnit
 
 ## License
 

@@ -11,6 +11,7 @@ public class Hangman {
   public Hangman() {
     Random myRandomGenerator = new Random();
     word = words[myRandomGenerator.nextInt(words.length)];
+    answer = new String(new char[word.length()]).replace("\0", "-");
   }
 
   public String getWord() {
@@ -18,7 +19,7 @@ public class Hangman {
   }
 
   public String getAnswer() {
-    return "";
+    return answer;
   }
 
   /*public void playGame() {

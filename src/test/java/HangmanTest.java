@@ -9,4 +9,10 @@ public class HangmanTest {
     Hangman testHangman = new Hangman();
     assertEquals(true, testHangman instanceof Hangman);
   }
+
+  @Test
+  public void newHangman_randomlySelectsWord_String() {
+    Hangman testHangman = new Hangman();
+    assertEquals(true, testHangman.getWord() instanceof String);
+  }
 }

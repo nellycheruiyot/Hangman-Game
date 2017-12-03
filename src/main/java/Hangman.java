@@ -30,8 +30,20 @@ public class Hangman {
     if (word.indexOf(letter.charAt(0)) == -1) {
       hang = true;
       wrongLetterCount += 1;
-    }else {
-      
+    } else {
+      hang = false;
+      playerLetters.add(letter);
+      String tempStr = "";
+      for (int i=0; i<word.length(); i++) {
+        if (word.charAt(i) == letter.charAt(0)) {
+          tempStr += letter;
+        } else if (answer.charAt(i) != '-') {
+          tempStr += answer.charAt(i);
+        } else {
+          tempStr += '-';
+        }
+      }
+      answer = tempStr;
     }
   }
 

@@ -23,11 +23,16 @@ public class Hangman {
   }
 
   public boolean getHang() {
-    return true;
+    return hang;
   }
 
   public void playGame(String letter) {
-
+    if (word.indexOf(letter.charAt(0)) == -1) {
+      hang = true;
+      wrongLetterCount += 1;
+    }else {
+      
+    }
   }
 
 }

@@ -15,4 +15,12 @@ public class HangmanTest {
     Hangman testHangman = new Hangman();
     assertEquals(true, testHangman.getWord() instanceof String);
   }
+
+  @Test
+  public void newHangman_setsIntialValueForAnswer_String() {
+    Hangman testHangman = new Hangman();
+    String testStr = new String(new char[testHangman.getWord().length()]).replace("\0", "-");
+    // Character.toString(testHangman.getAnswer().charAt(0));
+    assertEquals(testStr, testHangman.getAnswer());
+  }
 }

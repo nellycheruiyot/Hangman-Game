@@ -23,4 +23,11 @@ public class HangmanTest {
     // Character.toString(testHangman.getAnswer().charAt(0));
     assertEquals(testStr, testHangman.getAnswer());
   }
+
+  @Test
+  public void playGame_checksIfLetterExistsInWord_false() {
+    Hangman testHangman = new Hangman();
+    testHangman.playGame("o");
+    assertEquals(false, testHangman.getHang());
+  }
 }

@@ -5,9 +5,17 @@ public class App {
     Console myConsole = System.console();
 
     Hangman hangman = new Hangman();
-    System.out.println("Guess a letter: ");
-    String letter = myConsole.readLine();
-    hangman.playGame(letter);
-    System.out.println(hangman.getAnswer());
+    String word = hangman.getWord();
+    String answer = hangman.getAnswer();
+    while (!word.equals(answer)) {
+      System.out.println("Guess a letter: ");
+      String letter = myConsole.readLine();
+      hangman.playGame(letter);
+      answer = hangman.getAnswer();
+      System.out.println(word);
+      System.out.println(answer);
+
+    }
+
   }
 }

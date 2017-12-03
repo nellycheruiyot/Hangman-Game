@@ -30,4 +30,11 @@ public class HangmanTest {
     testHangman.playGame("o");
     assertEquals(false, testHangman.getHang());
   }
+
+  @Test
+  public void playGame_checksIfLetterExistsInWord_true() {
+    Hangman testHangman = new Hangman();
+    testHangman.playGame("z");
+    assertEquals(true, testHangman.getHang());
+  }
 }

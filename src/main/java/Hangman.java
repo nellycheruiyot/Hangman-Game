@@ -17,6 +17,10 @@ public class Hangman {
     return word;
   }
 
+  public String getAnswer() {
+    return "";
+  }
+
   /*public void playGame() {
 
   }*/

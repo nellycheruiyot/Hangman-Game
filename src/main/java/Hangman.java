@@ -9,11 +9,12 @@ public class Hangman {
   private int wrongLetterCount;
 
   public Hangman() {
-
+    Random myRandomGenerator = new Random();
+    word = words[myRandomGenerator.nextInt(words.length)];
   }
 
   public String getWord() {
-    return "";
+    return word;
   }
 
   /*public void playGame() {
